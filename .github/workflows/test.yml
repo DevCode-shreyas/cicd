@@ -17,9 +17,6 @@ jobs:
       - name: Build the project
         run: yarn build
       - name: deploying the project
-        env:
-          VERCEL_ORG_ID: $VERCEL_ORG_ID
-          VERCEL_PROJECT_ID: $VERCEL_PROJECT_ID
         run: yarn deploy
       - name: setup finish
         run: echo "done"
